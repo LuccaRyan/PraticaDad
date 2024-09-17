@@ -1,0 +1,20 @@
+section{
+    color: black;
+}
+.title{
+    font-size: 32px;
+}
+.subtitle{
+    color: white;
+    padding: 6.5px 10.5px;
+    width: min-content;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

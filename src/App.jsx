@@ -1,33 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Section from './Components/Section/Section'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  let itens1 = [
+    {nome: "Item 1", imagem: "src/assets/carne1.png", preco: 10},
+    {nome: "Item 2", imagem: "src/assets/carne2.png", preco: 20},
+    {nome: "Item 3", imagem: "src/assets/carne3.png", preco: 30},
+  ]
+  let itens2 = [
+    {nome: "Item 4", imagem: "src/assets/carne1.png", preco: 40},
+    {nome: "Item 5", imagem: "src/assets/carne2.png", preco: 50},
+    {nome: "Item 6", imagem: "src/assets/carne3.png", preco: 60},
+  ]
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Section titulo={"CLIENTE +"} subtitulo={"promo"} itens={itens1} cor={"red"}/>
+      <Section titulo={"OUTROS"} subtitulo={"saudável"} itens={itens2} cor={"green"}/>
     </>
   )
 }

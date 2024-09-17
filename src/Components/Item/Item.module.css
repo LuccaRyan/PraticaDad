@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    width: 364px;
+    height: 117px;
+    background-color: white;
+
+}
+.container div{
+    position: relative;
+    right: 0;
+}
+.container img{
+    width: 80px;
+    height: 80px;
+    top: 8px;
+    left: 13.5px;
+    position: relative;
+}
